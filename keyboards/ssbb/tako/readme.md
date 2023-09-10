@@ -1,4 +1,4 @@
-# Tako Onboard
+# Tako
 
 ![Tako Keyboard](https://raw.githubusercontent.com/ssbb/tako/rev1/docs/img/pcb.png)
 
@@ -8,7 +8,27 @@ Tako is a vertical stagger split keyboard with electrostatic capacitive (EC) non
 -   Hardware Supported: Tako
 -   Hardware Availability: [Github](https://github.com/ssbb/tako)
 
-# Rev0
+## Rev1
+
+Make example for this keyboard (after setting up your build environment):
+
+    make ssbb/tako:default
+
+Flashing example for this keyboard:
+
+    make ssbb/tako:default:flash
+
+See the [build environment setup](https://docs.qmk.fm/#/getting_started_build_tools) and the [make instructions](https://docs.qmk.fm/#/getting_started_make_guide) for more information. Brand new to QMK? Start with our [Complete Newbs Guide](https://docs.qmk.fm/#/newbs).
+
+### Bootloader
+
+You can enter the bootloader in 3 ways:
+
+- **Physical reset button**: Briefly press the button on the side of the PCB, next to the TRRS socket.
+- **Keycode in layout**: Press the key mapped to QK_BOOT if it is available.
+
+
+## Rev0
 
 Make example for this keyboard (after setting up your build environment):
 
@@ -21,7 +41,7 @@ Flashing example for this keyboard (and set handness by EEPROM):
 
 See the [build environment setup](https://docs.qmk.fm/#/getting_started_build_tools) and the [make instructions](https://docs.qmk.fm/#/getting_started_make_guide) for more information. Brand new to QMK? Start with our [Complete Newbs Guide](https://docs.qmk.fm/#/newbs).
 
-## Bootloader
+### Bootloader
 
 Enter the bootloader in 3 ways:
 
