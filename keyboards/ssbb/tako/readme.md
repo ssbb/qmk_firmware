@@ -12,11 +12,11 @@ Tako is a vertical stagger split keyboard with electrostatic capacitive (EC) non
 
 Make example for this keyboard (after setting up your build environment):
 
-    make ssbb/tako:default
+    make ssbb/tako:default -e CONVERT_TO=rp2040_ce
 
 Flashing example for this keyboard:
 
-    make ssbb/tako:default:flash
+    make ssbb/tako:default:flash -e CONVERT_TO=rp2040_ce
 
 See the [build environment setup](https://docs.qmk.fm/#/getting_started_build_tools) and the [make instructions](https://docs.qmk.fm/#/getting_started_make_guide) for more information. Brand new to QMK? Start with our [Complete Newbs Guide](https://docs.qmk.fm/#/newbs).
 
