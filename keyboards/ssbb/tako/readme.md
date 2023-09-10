@@ -1,6 +1,6 @@
 # Tako Onboard
 
-![Tako Keyboard](https://github.com/ssbb/tako/blob/dbc6211e5c4ba931b4ea7a987243862151c7dac3/docs/img/assembled.jpg)
+![Tako Keyboard](https://raw.githubusercontent.com/ssbb/tako/rev1/docs/img/pcb.png)
 
 Tako is a vertical stagger split keyboard with electrostatic capacitive (EC) non-contact switches.
 
@@ -8,14 +8,16 @@ Tako is a vertical stagger split keyboard with electrostatic capacitive (EC) non
 -   Hardware Supported: Tako
 -   Hardware Availability: [Github](https://github.com/ssbb/tako)
 
+# Rev0
+
 Make example for this keyboard (after setting up your build environment):
 
-    make ssbb/tako/onboard:default
+    make ssbb/tako/rev0:default
 
 Flashing example for this keyboard (and set handness by EEPROM):
 
-    make ssbb/tako/onboard:default:dfu-util-split-left
-    make ssbb/tako/onboard:default:dfu-util-split-right
+    make ssbb/tako/rev0:default:dfu-util-split-left
+    make ssbb/tako/rev0:default:dfu-util-split-right
 
 See the [build environment setup](https://docs.qmk.fm/#/getting_started_build_tools) and the [make instructions](https://docs.qmk.fm/#/getting_started_make_guide) for more information. Brand new to QMK? Start with our [Complete Newbs Guide](https://docs.qmk.fm/#/newbs).
 
