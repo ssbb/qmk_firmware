@@ -25,34 +25,34 @@
 // Calibration:
 // Baseline read - what you see in console when keyboard IDLE.
 //
-// EC_HIGH_THRESHOLD[][] = BASELINE_READ + 100
-// EC_LOW_THRESHOLD[][] = HIGH_THRESHOLD + 300
+// EC_LOW_THRESHOLD[][] = BASELINE_READ + 100
+// EC_HIGH_THRESHOLD[][] = HIGH_THRESHOLD + 300
 //
 // You could change 300 to something else to adjust actuation depth.
 
 // clang-format off
-#define EC_LOW_THRESHOLD_LEFT {  \
+#define EC_HIGH_THRESHOLD_LEFT {  \
     { 700, 700, 700, 700, 700 }, \
     { 700, 700, 700, 700, 700 }, \
     { 700, 700, 700, 700, 700 }, \
     { 700, 700, 700, 700, 700 }  \
 }
 
-#define EC_LOW_THRESHOLD_RIGHT { \
+#define EC_HIGH_THRESHOLD_RIGHT { \
     { 700, 700, 700, 700, 700 }, \
     { 700, 700, 700, 700, 700 }, \
     { 700, 700, 700, 700, 700 }, \
     { 700, 700, 700, 700, 700 }  \
 }
 
-#define EC_HIGH_THRESHOLD_LEFT { \
+#define EC_LOW_THRESHOLD_LEFT { \
     { 650, 650, 650, 650, 650 }, \
     { 650, 650, 650, 650, 650 }, \
     { 650, 650, 650, 650, 650 }, \
     { 650, 650, 650, 650, 650 }  \
 }
 
-#define EC_HIGH_THRESHOLD_RIGHT { \
+#define EC_LOW_THRESHOLD_RIGHT { \
     { 650, 650, 650, 650, 650 },  \
     { 650, 650, 650, 650, 650 },  \
     { 650, 650, 650, 650, 650 },  \

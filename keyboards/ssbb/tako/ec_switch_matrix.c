@@ -169,7 +169,7 @@ int16_t ecsm_readkey_raw(uint8_t row, uint8_t col) {
     writePinLow(discharge_pin);
     setPinOutput(discharge_pin);
 #endif
-    WAIT_DISCHARGE();
+    wait_us(10);
 
     return sw_value;
 }
