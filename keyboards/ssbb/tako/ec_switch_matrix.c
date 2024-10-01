@@ -39,6 +39,7 @@ pin_t col_channels[] = MATRIX_COL_CHANNELS;
 pin_t mux_sel_pins[] = MUX_SEL_PINS;
 pin_t aplex_en_pin   = APLEX_EN_PIN;
 pin_t discharge_pin  = DISCHARGE_PIN;
+pin_t power_pin      = POWER_PIN;
 
 const int rows_len = sizeof row_pins / sizeof row_pins[0];
 const int cols_len = sizeof col_channels / sizeof col_channels[0];
@@ -102,11 +103,18 @@ int ecsm_init(ecsm_config_t const* const ecsm_config) {
 #ifdef DISCHARGE_PIN_RIGHT
         discharge_pin = DISCHARGE_PIN_RIGHT;
 #endif
+
+#ifdef POWER_PIN_RIGHT
+        power_pin = POWER_PIN_RIGHT;
+#endif
     }
 
 #ifdef MCU_STM32
     palSetLineMode(ANALOG_PORT, PAL_MODE_INPUT_ANALOG);
 #endif
+
+    setPinOutput(power_pin);
+    writePinHigh(power_pin);
 
     adcMux = pinToMux(ANALOG_PORT);
     ec_adc_read(adcMux, true);
